@@ -1,4 +1,4 @@
-/home/user/my_sqlite/build/CMakeFiles/dblib.dir
-/home/user/my_sqlite/build/CMakeFiles/mysqlite-web.dir
-/home/user/my_sqlite/build/CMakeFiles/edit_cache.dir
-/home/user/my_sqlite/build/CMakeFiles/rebuild_cache.dir
+/home/antro/semester2/DataBase/SKAAM/build/CMakeFiles/dblib.dir
+/home/antro/semester2/DataBase/SKAAM/build/CMakeFiles/mysqlite-web.dir
+/home/antro/semester2/DataBase/SKAAM/build/CMakeFiles/edit_cache.dir
+/home/antro/semester2/DataBase/SKAAM/build/CMakeFiles/rebuild_cache.dir

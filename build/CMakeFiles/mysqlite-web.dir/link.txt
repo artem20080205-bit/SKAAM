@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o -o mysqlite-web  libdblib.a -lpthread 
+/usr/bin/c++ "CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o" -o mysqlite-web  libdblib.a -lpthread 

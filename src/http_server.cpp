@@ -203,25 +203,24 @@ private:
 <body>
     <div class="container">
         <div class="header">
-            <h1>🗄️ MySQLite Web Client</h1>
-            <p>Execute SQL queries directly from your browser</p>
+            <h1>SQL Веб-клиент</h1>
         </div>
         
         <div class="card">
             <div class="card-header">
-                📝 SQL Query Editor
+                Редактор SQL-запросов
             </div>
             <div class="card-body">
                 <form method="GET" action="/">
-                    <textarea name="sql" rows="6" placeholder="Enter your SQL query here...
+                    <textarea name="sql" rows="6" placeholder="Введите ваше SQL запрос...
                     
-Examples:
+Примеры:
 SELECT * FROM users;
-INSERT INTO users VALUES (1, 'John', 25);
-UPDATE users SET age = 26 WHERE name = 'John';
+INSERT INTO users VALUES (1, 'Michael', 25);
+UPDATE users SET age = 26 WHERE name = 'Michael';
 DELETE FROM users WHERE id = 1;"></textarea>
                     <br><br>
-                    <button type="submit">▶ Execute Query</button>
+                    <button type="submit">Выполнить SQL-запрос</button>
                 </form>
             </div>
         </div>
@@ -373,15 +372,15 @@ DELETE FROM users WHERE id = 1;"></textarea>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 Query Result</h1>
+            <h1>Результат выолнения запроса</h1>
         </div>
         
         <div class="card">
             <div class="card-header">
-                🔍 Execution Result
+                Результат выполнения
             </div>
             <div class="card-body">
-                <a href="/" class="back-link">← New Query</a>
+                <a href="/" class="back-link">Новый запрос</a>
 )";
         
         if (!result.success) {
@@ -406,16 +405,16 @@ DELETE FROM users WHERE id = 1;"></textarea>
                 }
                 html << "</tbody></table>";
                 html << "<div class='stats'>📈 " << (result.rows.size() - 1) 
-                     << " row" << ((result.rows.size() - 1) != 1 ? "s" : "") << " returned</div>";
+                     << " строк" << ((result.rows.size() - 1) != 1 ? "" : "") << " возвращено</div>";
             }
         } 
         else {
-            html << "<div class='success'>✅ Query executed successfully<br>";
-            html << "Affected rows: " << result.affected_rows << "</div>";
+            html << "<div class='success'>Запрос выполнен успешно<br>";
+            html << "Изменено строк: " << result.affected_rows << "</div>";
         }
         
         html << "<div class='query-info'>";
-        html << "<strong>📝 Executed query:</strong><br>";
+        html << "<strong>Выполненный запрос</strong><br>";
         html << html_escape(sql);
         html << "</div>";
         
@@ -459,7 +458,7 @@ DELETE FROM users WHERE id = 1;"></textarea>
         response = "HTTP/1.1 200 OK\r\n";
         response += "Content-Type: text/html; charset=utf-8\r\n";
         response += "Content-Length: " + std::to_string(content.length()) + "\r\n";
-        response += "Connection: close\r\n";
+        response += "Подключение: закрыто\r\n";
         response += "\r\n";
         response += content;
         
@@ -497,13 +496,13 @@ public:
 void start() {
     std::cout << "\n";
     std::cout << "========================================\n";
-    std::cout << "  MySQLite Web Server made by SKAAM\n";
+    std::cout << "  MySQLite Веб-сервер made by SKAAM\n";
     std::cout << "========================================\n";
-    std::cout << "  🌐 Web Interface: http://localhost:" << port << "\n";
-    std::cout << "  📡 Status: Running\n";
-    std::cout << "  🛑 Stop: Ctrl+C\n";
+    std::cout << "  Веб-интерфейс: http://localhost:" << port << "\n";
+    std::cout << "  Статус: запущен\n";
+    std::cout << "  Остановить: Ctrl+C\n";
     std::cout << "========================================\n\n";
-    std::cout << "✨ Ready! Open your browser at http://localhost:" << port << "\n\n";
+    std::cout << "Готово! Откройте браузер по ссылке http://localhost:" << port << "\n\n";
     
     while (true) {
         int client_fd = accept(server_fd, nullptr, nullptr);

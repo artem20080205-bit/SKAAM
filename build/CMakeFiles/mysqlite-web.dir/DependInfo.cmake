@@ -8,12 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/my_sqlite/src/http_server.cpp" "CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o" "gcc" "CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o.d"
+  "/home/antro/semester2/DataBase/SKAAM/src/http_server.cpp" "CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o" "gcc" "CMakeFiles/mysqlite-web.dir/src/http_server.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/my_sqlite/build/CMakeFiles/dblib.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
