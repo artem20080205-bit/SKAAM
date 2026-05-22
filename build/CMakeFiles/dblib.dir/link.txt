@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdblib.a CMakeFiles/dblib.dir/src/api/database.cpp.o CMakeFiles/dblib.dir/src/storage/storage.cpp.o CMakeFiles/dblib.dir/src/commands/executor.cpp.o
+/usr/bin/ranlib libdblib.a

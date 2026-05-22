@@ -1,0 +1,4 @@
+/home/user/my_sqlite/build/CMakeFiles/dblib.dir
+/home/user/my_sqlite/build/CMakeFiles/mysqlite-web.dir
+/home/user/my_sqlite/build/CMakeFiles/edit_cache.dir
+/home/user/my_sqlite/build/CMakeFiles/rebuild_cache.dir
