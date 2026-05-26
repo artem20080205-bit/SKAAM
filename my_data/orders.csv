@@ -1,0 +1,5 @@
+id,user_id,product_id,quantity
+INT,INT,INT,INT
+1,1,1,1
+2,1,2,2
+3,2,3,1
