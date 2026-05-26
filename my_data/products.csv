@@ -1,5 +1,0 @@
-id,title,price
-INT,TEXT,INT
-1,'Laptop',1000
-2,'Mouse',50
-3,'Keyboard',80
